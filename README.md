@@ -9,3 +9,11 @@ python manage.py runserver
 ![](img2.png)
 
 ![](img3.png)
+
+build Docker
+
+docker-compose run web
+docker-compose up --build
+docker-compose run web python3.9 manage.py migrate
+docker-compose run web python3.9 manage.py createsuperuser
+docker-compose up --build
